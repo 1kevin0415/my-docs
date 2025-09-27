@@ -28,5 +28,6 @@ jobs:
       - name: 部署到GitHub Pages  
         uses: JamesIves/github-pages-deploy-action@v4  
         with:  
+	token: ${{ secrets.DEPLOY_TOKEN }}
           branch: gh-pages  # 部署目标分支  
           folder: site      # 待部署的文件目录 
